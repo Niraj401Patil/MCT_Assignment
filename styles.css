@@ -1,0 +1,81 @@
+/* styles.css */
+
+/* Style for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-button, #reset-button {
+    padding: 10px 15px;
+    background-color: #00d9ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+
+#search-button:hover, #reset-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the product row */
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-bottom: 20px;
+}
+
+/* Style for the product card */
+.product-card {
+    width: 23%; /* 4 cards per row with some spacing */
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style for the product image */
+.product-card img {
+    max-width: 100%;
+    max-height: 150px; /* Set a maximum height for the images */
+    margin-bottom: 10px;
+}
+
+/* Style for the product name */
+.product-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Style for pagination */
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination li {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pagination li:hover {
+    background-color: #f0f0f0;
+}
