@@ -79,3 +79,16 @@
 .pagination li:hover {
     background-color: #f0f0f0;
 }
+
+footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+  }
+
+  header {
+    text-align: center;
+    background-color: #0d0d0e;
+    color: #fff;
+    padding: 10px 0;
+  }
