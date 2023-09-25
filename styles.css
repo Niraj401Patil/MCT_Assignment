@@ -1,6 +1,16 @@
 /* styles.css */
 
 /* Style for the search container */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 5px;
+    padding: 5px;
+}
 .search-container {
     display: flex;
     align-items: center;
@@ -10,7 +20,7 @@
 #search-input {
     flex-grow: 1;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #3b3a3a;
     border-radius: 5px;
     margin-right: 10px;
 }
@@ -19,7 +29,7 @@
     padding: 10px 15px;
     background-color: #00d9ff;
     color: #fff;
-    border: none;
+    border: 1px solid #222121;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
@@ -34,7 +44,7 @@
 .product-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-around;
     margin-bottom: 20px;
 }
 
@@ -82,8 +92,9 @@
 
 footer {
     text-align: center;
-    background-color: #f0f0f0;
-    padding: 10px 0;
+    background-color: #1a1818;
+    padding: 10px;
+    color: #fff;
   }
 
   header {
