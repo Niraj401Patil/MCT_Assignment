@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resetButton = document.getElementById("reset-button");
     const productContainer = document.getElementById("product-container");
     const pagination = document.getElementById("pagination");
-
+    
     // Function to fetch product data from the API
     async function fetchProducts() {
         try {
@@ -36,7 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const productsToDisplay = filteredProducts.slice(startIndex, endIndex);
 
         // Clear previous products
-        productContainer.innerHTML = "";
+        productContainer.innerHTML =" ";
+
+        
 
         // Display products in rows of 4 each
         for (let i = 0; i < productsToDisplay.length; i += 4) {
@@ -64,7 +66,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
             productContainer.appendChild(row);
         }
+
+        if(productsToDisplay.length==0)
+        {
+            productContainer.innerHTML="This product is not available please search another one 😊😊";  
+        }
     }
+
+    
 
     // Function to update pagination buttons
     function updatePaginationButtons() {
